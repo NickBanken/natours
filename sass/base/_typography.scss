@@ -41,3 +41,35 @@ body{
         margin-bottom: 5rem;
     }
 }
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,
+                                    $color-primary-light,
+                                    $color-primary-dark);
+    -webkit-background-clip: text;
+    color:transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    &:hover{
+        transform: skewY(2deg) skewX(5deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+.heading-tertiary{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.8rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
