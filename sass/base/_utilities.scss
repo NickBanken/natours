@@ -1,8 +1,14 @@
 .u {
     &-center-text{text-align: center;}
-    &-margin-bottom{
-        &-small{margin-bottom: 1.5rem};
-        &-med{margin-bottom: 4rem};
-        &-big{margin-bottom: 8rem;}
+    &-margin{
+        &-bottom{
+            &-small{margin-bottom: 1.5rem};
+            &-med{margin-bottom: 4rem};
+            &-big{margin-bottom: 8rem;}
+        }
+        &-top{
+            &-big{ margin-top: 8rem;}
+            &-huge{ margin-top: 10rem};
+        }
     }
 }
