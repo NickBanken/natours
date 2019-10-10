@@ -15,6 +15,7 @@
 
     transform: skewY(-7deg);
     margin-top:-13rem;
+    
 
     & > *{
         transform: skewY(7deg);
@@ -42,9 +43,8 @@
 
 .book{
     background: linear-gradient(105deg,
-                                rgba($color-white, .0) 15%,
                                 rgba($color-white, .9) 10% 50%,
-                                rgba($color-white, .0) 50%),
+                                rgba($color-white, .0) 50%), transparent
                                 url('../img/nat-10.jpg');
     background-size: 100%;
     // object-fit: cover;
@@ -52,4 +52,21 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
 
     height: 50rem;
+
+&__form{
+    width: 50%;
+    padding: 6rem;
 }
+
+
+
+
+}
+
+
+
+
+
+
+
+
