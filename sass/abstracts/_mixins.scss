@@ -15,3 +15,58 @@
     -webkit-background-clip: text;
     color:transparent;
 }
+
+
+@mixin absCenter{
+    position: absolute;
+    top: 50%; 
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+
+
+// MEDIAQUERY MANAGER
+
+// 0 - 600px: PHONE
+// 600 - 900px: Tablet portrait
+// 900 - 1200px: Tablet landscape
+// 1200-1800px : Normal style
+// 1800px +: Big desktops
+
+
+/*
+$breakpoints box-sizing: border-box;hoices:
+- phone
+- tab-port
+- tab-land
+- big-desktopbox-sizing: border-box;
+
+
+ORDER: BASE+TYPO > general layout + grid > page layout > components
+
+1em = 16px;
+*/
+@mixin respond($breakpoint){
+    @if($breakpoint == phone){
+        @media (max-width:37.5em){ @content}; //600px
+    }
+    @else if($breakpoint == tab-port){
+        @media (max-width:56.25em){ @content}; //900px
+    }
+    @else if($breakpoint == tab-land){
+        @media (max-width:75em){ @content}; //1200px
+    }
+    @else if($breakpoint == big-desktop){
+        @media (min-width:112.5em){ @content}; //1800px
+    }
+}
