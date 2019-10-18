@@ -3,8 +3,18 @@
     &-margin{
         &-bottom{
             &-small{margin-bottom: 1.5rem};
-            &-med{margin-bottom: 4rem};
-            &-big{margin-bottom: 8rem;}
+            &-med{
+                margin-bottom: 4rem;
+                @include respond(tab-port){
+                    margin-bottom: 5rem;
+                }
+            };
+            &-big{
+                margin-bottom: 8rem;
+                @include respond(tab-port){
+                    margin-bottom: 5rem;
+                }
+            }
         }
         &-top{
             &-med{margin-top:4rem};
