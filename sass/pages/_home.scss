@@ -21,9 +21,9 @@
     margin-top:-13rem;
 
     
-    @media(min-resolution: 192dpi)and(min-width:37.5em),
-    (-webkit-min-device-pixel-ratio:2)and(min-width:37.5em),
-    (min-width:125em){
+    @media only screen and(min-resolution: 192dpi)and(min-width:37.5em),
+    only screen and (-webkit-min-device-pixel-ratio:2)and(min-width:37.5em),
+    only screen and (min-width:125em){
         background-image: linear-gradient(to right bottom,
         rgba($color-secondary-light, 0.8),
         rgba($color-secondary-dark, 0.8)),
@@ -76,7 +76,7 @@
     background: linear-gradient(105deg,
                                 rgba($color-white, .9) 10% 50%,
                                 rgba($color-white, .0) 50%), transparent
-                                url('../img/nat-10.jpg');
+                                url('../img/nat-10-large.jpg');
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
