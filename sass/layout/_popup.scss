@@ -34,6 +34,12 @@
         -moz-transition: all .4s ease-in-out .2s ;
         -ms-transition: all .4s ease-in-out .2s ;
         -o-transition: all .4s ease-in-out .2s ;
+
+        @include respond(tab-land){
+            display: block;
+            overflow-y:scroll;
+            height:400px;
+        }
 }
 
     &__left{
@@ -56,7 +62,6 @@
         -webkit-backface-visibility: hidden;
         @include respond(tab-land){
             display: inline-block;
-            height: 100%;
             width: 100%;
         }
 }
@@ -84,6 +89,11 @@
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         -ms-hyphens: auto;
+
+        @include respond(tab-land){
+            -moz-column-count: 1;
+            column-count: 1;
+        }
     }
 
 
